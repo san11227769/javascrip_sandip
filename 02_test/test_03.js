@@ -40,10 +40,10 @@ let gameCou = ++gameCounter
 //console.log(null < 0)
 //console.log(null != 0)
 
-console.log(null == "")
-console.log(null === "")
-console.log(null === "ab")
-console.log(null == "ab")
+//console.log(null == "")
+//console.log(null === "")
+//console.log(null === "ab")
+//console.log(null == "ab")
 
 
 //console.log(undefined > 0)
@@ -53,7 +53,26 @@ console.log(null == "ab")
 //console.log(undefined != 0)
 
 
-console.log(undefined == "")
-console.log(undefined === "")
-console.log(undefined === "ab")
-console.log(undefined == "ab")
+//console.log(undefined == "")
+//console.log(undefined === "")
+//console.log(undefined === "ab")
+//console.log(undefined == "ab")
+
+const id = Symbol('123')
+const antid = Symbol('123')
+console.log(id == antid)
+console.log(id === antid)
+console.log(id)
+console.log(antid)
+
+// Reference (Non Primitive) Array, Object, Function
+
+const Herro = ["a", "b", "c"]; // Array
+const profile = { // Object
+    name:"sandip",
+    phone:8670034069
+}
+const newFunction = function(){ // Function
+    return profile.phone;
+}
+console.log(typeof newFunction)
