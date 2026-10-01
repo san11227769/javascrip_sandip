@@ -23,5 +23,37 @@ console.log(scroeabc) */
 
 let sandip = 33
 //let String = typeof(sandip)
-let Stringaa = String(sandip)
-console.log(typeof Stringaa)
+// let Stringaa = String(sandip)
+// console.log(typeof Stringaa)
+
+//console.log("1" + 5)
+//console.log(+true)
+//console.log(-true)
+let gameCounter = 99
+let gameCou = ++gameCounter
+//console.log(gameCounter)
+// console.log(gameCou)
+
+//console.log(null > 0)
+//console.log(null == 0)
+//console.log(null === 0)
+//console.log(null < 0)
+//console.log(null != 0)
+
+console.log(null == "")
+console.log(null === "")
+console.log(null === "ab")
+console.log(null == "ab")
+
+
+//console.log(undefined > 0)
+//console.log(undefined == 0)
+//console.log(undefined === 0)
+//console.log(undefined < 0)
+//console.log(undefined != 0)
+
+
+console.log(undefined == "")
+console.log(undefined === "")
+console.log(undefined === "ab")
+console.log(undefined == "ab")
