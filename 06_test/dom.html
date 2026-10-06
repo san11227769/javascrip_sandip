@@ -8,5 +8,27 @@
   <body>
     <h1 id="title">Hello, HTML!</h1>
     <p>This is a basic HTML page.</p>
+    <ul class="list">
+      <!-- List items -->
+      <li class="item">Item 1</li>
+      <li class="item">Item 2</li>
+      <li class="item">Item 3</li> 
+      <li class="item">Item 4</li> 
+    </ul>
   </body>
+   <script>
+    // Accessing the DOM element by its ID
+    const titleElement = document.getElementById('title');
+    const listItems = document.querySelector('.list'); // Accessing the <ul> element with class "list"
+    console.log(listItems.children); // Logs the <h1> element
+      console.log(listItems.children[0].styleColor = 'red'); // Changes the color of the first <li> element to red
+      for (let i = 0; i < listItems.children.length; i++) {
+        console.log(listItems.children[i].innerHTML);
+      }
+       console.log(listItems.firstElementChild.innerHTML); // Logs the inner HTML of the first <li> element
+            const da = document.querySelector('.item');
+            console.log(da.parentElement); // Logs the parent element of the first <li> element
+  console.log(da.nextElementSibling); // Logs the next sibling element of the first <li> element
+    console.log("nodes", listItems.childNodes); // Logs the next sibling element of the first <li> element
+  </script>
 </html>

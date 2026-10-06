@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+  const newDiv = document.createElement('div');
+  newDiv.textContent = 'This is a new div element.';
+  newDiv.style.color = 'blue';
+  newDiv.className = 'new-div';
+  console.log(newDiv); // Logs the newly created <div> element
+document.body.appendChild(newDiv); // Appends the new <div> element to the body of the document
+    newDiv.setAttribute('id', 'newDivId'); // Sets an ID attribute for the new <div> element
+const addtext = document.createTextNode('This is a text node.');
+newDiv.appendChild(addtext); // Appends the text node to the new <div>
+</script>
+</html>
