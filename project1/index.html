@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .item {
+        background-color: #f0f0f0;
+        height: 100px;
+        cursor: pointer;
+    }
+    </style>
+<body>
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <p>This is a sample HTML file.</p>
+        <div class="grid">
+            <div class="item" style="background-color: lightblue;" data-color="lightblue"></div>
+            <div class="item" style="background-color: lightgreen;" data-color="lightgreen"></div>
+            <div class="item" style="background-color: lightyellow;" data-color="lightyellow"></div>
+            <div class="item" style="background-color: lightcoral;" data-color="lightcoral"></div>
+        </div>
+
+    </div>
+</body>
+<script src="custom.js"></script>
+</html>
