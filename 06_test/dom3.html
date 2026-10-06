@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="list">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+        function createNewElement(language) {
+           const li = document.createElement('li');
+           li.innerHTML = `${language}`;
+           document.querySelector('.list').appendChild(li);
+        }
+        createNewElement('Python');
+        createNewElement('Java');
+
+        function createNewElement2(language) {
+           const li = document.createElement('li');
+           li.appendChild(document.createTextNode(language));
+           document.querySelector('.list').appendChild(li);
+        }
+        createNewElement2('C++');
+         
+        // Edit 
+        const listItems = document.querySelector('li:nth-child(1)'); // Accessing the first <li> element
+        const list =  document.createElement('li');
+        list.innerText = 'JavaScript (Edited)';
+         listItems.replaceWith(list); // Changing the inner HTML of
+
+         // Remove
+         const listItems2 = document.querySelector('li:nth-child(2)'); // Accessing the second <li> element
+         listItems2.remove(); // Removing the second <li> element
+    </script>
+</html>
