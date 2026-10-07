@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h1>Async</h1>
+    <button id="stop">Click stop</button>
+     <button id="start">Click start</button>
+    <div id="output"></div>
+</body>
+<script>
+  const body = document.querySelector('body');
+
+let intervalId;
+
+function output(str) {
+    document.querySelector('h1').innerHTML = 'Async is working';
+    body.style.backgroundColor = randomColor();
+    console.log('this is output ' + str);
+}
+
+document.querySelector('#start').addEventListener('click', function () {
+
+    // Prevent multiple intervals
+    if (intervalId === null) {
+        intervalId = setInterval(output, 2000, 'hii');
+        console.log('Interval started');
+    }
+
+});
+
+document.querySelector('#stop').addEventListener('click', function () {
+
+    clearInterval(intervalId);
+    intervalId = null;
+
+    console.log('this is stop button');
+});
+
+function randomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+
+    return `rgb(${r}, ${g}, ${b})`;
+}
+   
+</script>
+</html>

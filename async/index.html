@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h1>Async</h1>
+    <button id="stop">Click stop</button>
+    <div id="output"></div>
+</body>
+<script>
+    
+    const output = function() {
+        const nevalue =   document.querySelector('h1').innerHTML = 'Async is working';
+       console.log('this is output');
+    }
+    const stopTimeout = setTimeout(output, 2000);
+    document.querySelector('#stop').addEventListener('click', function(e) {
+        clearTimeout(stopTimeout);
+        console.log('this is stop button');
+    });
+ 
+    //setTimeout( function() {}, 2000);
+    //setTimeout(() => {}, 2000);
+   
+</script>
+</html>
