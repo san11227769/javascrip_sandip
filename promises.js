@@ -1,5 +1,5 @@
 
-
+// what is promises? -
 
 // const promiseOne = new Promise((resolve, reject) => {
 //     // Some asynchronous operation
@@ -105,6 +105,8 @@ async function fetchRandomUser() {
         console.log(data.results[0].name);
     } catch (error) {
         console.error('Error fetching random user:', error);
+    } finally {
+        console.log("finally: Fetching random user completed.");
     }
 }
 
@@ -119,4 +121,6 @@ fetch('https://randomuser.me/api/').then((response) => {
     console.log(data.results[0].name);
 }).catch((error) => {
     console.error('Error fetching random user:', error);
+}).finally(() => {
+    console.log("finally: Fetching random user completed.");
 });
