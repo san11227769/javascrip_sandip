@@ -1,3 +1,4 @@
+
 const userlist = {
     userName : "sandi",
     singnin : true,
@@ -19,3 +20,8 @@ const userDetails1 = new User("papai", false, 34)
 const userDetails2 = new User("peu", false, 34)
 // console.log(userDetails1)
 console.log(userDetails1.constructor)
+
+// -- Constructor function (new)
+const promishOne = new Promise()
+ const date = new Date()
+
